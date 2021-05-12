@@ -1,0 +1,22 @@
+server:
+  port: 8764
+
+spring:
+  application:
+    name: UserFavourite-Service
+  datasource:
+    url: jdbc:mysql://localhost:3306/favourite?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true 
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+
+    
+
